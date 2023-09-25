@@ -1,12 +1,10 @@
 #include <stddef.h>
 
 /**
- * _strspn - Gets the length of a prefix substring consisting of characters
- *           found in the "accept" string.
- * @s: Pointer to the string to search.
- * @accept: Pointer to the string containing the characters to accept.
- * @count: number of byte.
- * Return: The number of bytes in the initial segment of s consisting of only characters from accept.
+ * _strspn - Gets the length of a prefix
+ * @s: Pointer to the string to search
+ * @accept: Pointer to the string containing the characters to accept
+ * Return: The number of bytes in the initial segment of s consists of accept
  */
 
 unsigned int _strspn(char *s, char *accept)
