@@ -1,0 +1,1 @@
+pointer_array_strings 7
