@@ -1,27 +1,31 @@
 #include "main.h"
-#include <stdio.h>
 
+/**
+ * prime_a - calculate if its a prime
+ * @a: input
+ * @b: divisor
+ * Return: 0
+ */
+
+int prime_a(int a, int b)
+{
+	if (a <= 1 || (a != b && a % b == 0))
+	{
+		return (0);
+	}
+	else if (a == b)
+	{
+		return (1);
+	}
+	return (prime_a(a, b + 1));
+}
 /**
  * is_prime_number - returns 1 if integer is a prime number
  * @n: prime number
- * Return: 1 if n is prime, 0 otherwise
+ * Return: 1 or 0
  */
 
 int is_prime_number(int n)
 {
-	int i;
-
-	if (n <= 1)
-	{
-		return (0);
-	}
-
-	for (i = 2; i * i <= n; i++)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	}
-	return (1);
+	return (prime_a(n, 2));
 }
