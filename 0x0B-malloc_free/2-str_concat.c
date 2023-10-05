@@ -6,11 +6,11 @@
  * str_concat - Concatenates two strings.
  * @s1: The first string.
  * @s2: The second string.
- * @str: string
+ * @str: the input string
  * Return: If memory allocation fails, return NLL
  */
 
-unsigned int _strlen(char *str);
+unsigned int _strlen(char s1, s2);
 
 char *str_concat(char *s1, char *s2)
 {
@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 }
 
 /**
- * _strlen - Returns the length of a string.
+ * _strlen - returns lenght of string
  * @str: The input string.
  *
  * Return: The length of the string.
