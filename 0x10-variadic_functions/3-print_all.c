@@ -1,20 +1,16 @@
 #include "variadic_function.h"
-
 /**
  * print_all - print any argument provided to function
  * @format: the argument specifie
  * Return: any argument given based on format specifier
  */
-
 void print_all(const char * const format, ...)
 {
 	int i, check_stat;
-
 	char *str;
 	va_list spc;
 
 	va_start(spc, format);
-
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
@@ -47,6 +43,6 @@ void print_all(const char * const format, ...)
 			printf(", ");
 		i++;
 	}
-	printf("\n");
 	va_end(spc);
+	printf("\n");
 }
